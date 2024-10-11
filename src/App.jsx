@@ -1,5 +1,7 @@
+import UserInput from "./components/UserInput";
+
 function App() {
-  return <h1>Generate Images</h1>;
+  return <UserInput />;
 }
 
 export default App;
