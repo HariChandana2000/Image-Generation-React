@@ -8,6 +8,10 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  background-image: url("https://i.pinimg.com/736x/10/6d/79/106d79b387a996bd4b7ee66d61c7c2d2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #root {
@@ -54,11 +58,11 @@ input {
 }
 
 img {
-  width: 300px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
-  margin: 2px;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .images-container {
@@ -67,4 +71,40 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.image-card {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgb(224, 221, 221);
+  margin: 5px;
+}
+
+.image-card p {
+  text-align: center;
+  text-overflow: ellipsis;
+  padding: 5px;
+  color: rgb(137, 132, 132);
+  font-size: 18px;
+}
+
+.image-card a {
+  text-decoration: none;
+  color: rgb(212, 40, 135);
+  font-weight: 600;
+}
+
+.image-card a:visited {
+  text-decoration: none;
+  color: rgb(212, 40, 135);
+}
+
+.details a {
+  font-size: 14px;
 }

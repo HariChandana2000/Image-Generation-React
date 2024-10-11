@@ -27,7 +27,11 @@ const UserInput = () => {
         />
         <button onClick={handleGetImages}>Get Images</button>
       </div>
-      <Images imagesData={imagesData} />
+      {imagesData.length > 0 ? (
+        <Images imagesData={imagesData} />
+      ) : (
+        <h1>No Images Found!</h1>
+      )}
     </>
   );
 };
